@@ -20,9 +20,10 @@ export const metadata: Metadata = {
     siteName: "Solar Spectrum",
     images: [
       {
-        url: "/opengraph-image.png",
-        width: 800,
-        height: 600,
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Solar Spectrum Logo",
       },
     ],
     locale: "en_US",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Solar Spectrum | Renewable Energy Solutions",
     description: "Solar & Battery, Heating & Cooling, Heat Pump & EV Chargers. The Smarter Way to power your home.",
-    images: ["/opengraph-image.png"],
+    images: ["/opengraph-image"],
   },
 };
 
