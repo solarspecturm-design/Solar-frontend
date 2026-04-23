@@ -1,0 +1,10 @@
+node_modules/
+.git/
+.vscode/
+**/*.log
+dist/
+.env
+*.env.local
+*.local
+README.md
+/.github/
