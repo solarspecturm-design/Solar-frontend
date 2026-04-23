@@ -1,0 +1,167 @@
+.footerSection {
+    background: #000;
+    color: #fff;
+    padding-top: 10px;
+    /* Reduced from 60px to merge with previous section */
+    position: relative;
+    width: 100%;
+    z-index: 50;
+}
+
+/* Footer Main Content */
+.footerMain {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.logoArea {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footerLogo {
+    margin-bottom: 20px;
+}
+
+
+.logoDesc {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.socialIcon {
+    width: 40px;
+    height: 40px;
+    background: #222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.socialIcon:hover {
+    background: #65B741;
+}
+
+.columnTitle {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.linkItem {
+    color: #aaa;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.linkItem:hover {
+    color: #65B741;
+}
+
+.linkIcon {
+    font-size: 12px;
+    color: #fff;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactItem {
+    display: flex;
+    gap: 15px;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contactLink {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+    color: #fff;
+}
+
+.contactIcon {
+    color: #fff;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* Bottom Bar */
+.bottomBar {
+    border-top: 1px solid #222;
+    padding: 30px 20px;
+}
+
+.bottomContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.legalLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.legalLink:hover {
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .footerMain {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footerMain {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .logoArea,
+    .socials,
+    .linkItem,
+    .contactItem {
+        justify-content: center;
+    }
+
+    .bottomContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
