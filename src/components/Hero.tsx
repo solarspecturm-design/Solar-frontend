@@ -19,6 +19,9 @@ const Hero = () => {
                         <div className={styles.badgeItem}>
                             <img src={"/certi.png"}></img>
                         </div>
+                         <div className={styles.badgeItem}>
+                            <img src={"/image 1fthtf 1.png"}></img>
+                        </div>
                     </div>
 
                     <h1 className={styles.mainHeading}>
