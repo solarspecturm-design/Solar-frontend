@@ -8,6 +8,7 @@ import ProblemFixSection from '@/components/ProblemFixSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ConnectExpertsSection from '@/components/ConnectExpertsSection';
 import ServicesGrid from '@/components/ServicesGrid';
+import PricingSection from '@/components/PricingSection';
 
 export default function SolarBatteryPage() {
     return (
@@ -61,6 +62,8 @@ export default function SolarBatteryPage() {
             <ProblemFixSection />
 
             <TestimonialsSection />
+
+            <PricingSection />
 
             <ConnectExpertsSection />
 

@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import ProductHero from '@/components/ProductHero';
 import ProductInfoSection from '@/components/ProductInfoSection';
 import WhyChoosePowerwall from '@/components/WhyChoosePowerwall';
-import PricingSection from '@/components/PricingSection';
+
 import TestimonialsSection from '@/components/TestimonialsSection';
 import PowerwallWorthSection from '@/components/PowerwallWorthSection';
 import SolarSolutionsSection from '@/components/SolarSolutionsSection';
@@ -23,7 +23,7 @@ export default function ProductPage() {
 
             <WhyChoosePowerwall />
 
-            <PricingSection />
+
 
             <PowerwallWorthSection />
           <TestimonialsSection />
