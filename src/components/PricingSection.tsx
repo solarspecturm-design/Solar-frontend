@@ -19,42 +19,36 @@ const PricingSection = () => {
             {/* Pricing Cards */}
             <div className={styles.cardsContainer}>
                 {/* Card 1 - Premium 10kWh */}
-                <div className={styles.card}>
+
+                  <div className={styles.card}>
                     <div className={styles.cardHeaderOrange}>
-                        <h3 className={styles.productTitle}>Premium 10kWh Solar System</h3>
-                        <p className={styles.productSubtitle}>Perfect for Large Family Homes</p>
-                    </div>
-
-                    <div className={styles.pricingBody}>
-                        <div className={styles.priceContainer}>
-                            <div className={styles.priceWrapper}>
-                                <span className={styles.currentPrice}>$4,990*</span>
-                                <span className={styles.originalPrice}>$7,790</span>
-                            </div>
-                            <span className={styles.savingsBadge}>Save $2,800 today</span>
+                        <h3 className={styles.productTitle}>Signenergy 8kWh</h3>
+                        <p className={styles.productSubtitle}>Complete Home Energy Solution</p>
+                    </div>                    <div className={styles.pricingBody}>
+                        <div className={styles.powerSecurity}>
+                            <div><strong>24/7 power security</strong><br />with blackout protection.</div>
                         </div>
-                        <span className={styles.idealFor}>Ideal for 4+ bedroom homes with high energy usage.</span>
                     </div>
-
                     <div className={styles.features}>
                         <ul className={styles.featuresList}>
                             <li className={styles.featureItem}>
-                                <div><strong>Save $3,300 Yearly</strong>Typical annual savings on power bills</div>
+                                <div><strong>24/7 power security</strong>With blackout protection</div>
                             </li>
                             <li className={styles.featureItem}>
-                                <div><strong>VIC Rebate Included</strong>$1,400 rebate & $1,400 Solar Victoria Loan Applied</div>
+                                <div><strong>Zero Power Bills</strong>Potential to eliminate bills</div>
                             </li>
                             <li className={styles.featureItem}>
-                                <div><strong>High Performance</strong>Powers AC, pool & large appliances</div>
+                                <div><strong>Smart Features</strong>App monitoring included</div>
                             </li>
                         </ul>
-                        <div className={styles.warrantyBox}>✓ 25-year performance warranty included</div>
+                        <div className={styles.warrantyBox}>✓ $0 Interest-free finance available</div>
+                        <div className={styles.warrantyBox}>✓ Best-rated solar battery in Victoria</div>
                         <Link href="/contact" className="mt-auto">
                             <button className={styles.orangeButton}>Get Your Free Quote →</button>
                         </Link>
                     </div>
                 </div>
-
+               
                 {/* Card 2 - Smart Start */}
                 <div className={`${styles.card} ${styles.cardFeatured}`}>
                     <div className={styles.popularBadge}>MOST POPULAR</div>
@@ -94,34 +88,42 @@ const PricingSection = () => {
                 </div>
 
                 {/* Card 3 - Signenergy 8kWh */}
-                <div className={styles.card}>
+               <div className={styles.card}>
                     <div className={styles.cardHeaderOrange}>
-                        <h3 className={styles.productTitle}>Signenergy 8kWh</h3>
-                        <p className={styles.productSubtitle}>Complete Home Energy Solution</p>
-                    </div>                    <div className={styles.pricingBody}>
-                        <div className={styles.powerSecurity}>
-                            <div><strong>24/7 power security</strong><br />with blackout protection.</div>
-                        </div>
+                        <h3 className={styles.productTitle}>Premium 10kWh Solar System</h3>
+                        <p className={styles.productSubtitle}>Perfect for Large Family Homes</p>
                     </div>
+
+                    <div className={styles.pricingBody}>
+                        <div className={styles.priceContainer}>
+                            <div className={styles.priceWrapper}>
+                                <span className={styles.currentPrice}>$4,990*</span>
+                                <span className={styles.originalPrice}>$7,790</span>
+                            </div>
+                            <span className={styles.savingsBadge}>Save $2,800 today</span>
+                        </div>
+                        <span className={styles.idealFor}>Ideal for 4+ bedroom homes with high energy usage.</span>
+                    </div>
+
                     <div className={styles.features}>
                         <ul className={styles.featuresList}>
                             <li className={styles.featureItem}>
-                                <div><strong>24/7 power security</strong>With blackout protection</div>
+                                <div><strong>Save $3,300 Yearly</strong>Typical annual savings on power bills</div>
                             </li>
                             <li className={styles.featureItem}>
-                                <div><strong>Zero Power Bills</strong>Potential to eliminate bills</div>
+                                <div><strong>VIC Rebate Included</strong>$1,400 rebate & $1,400 Solar Victoria Loan Applied</div>
                             </li>
                             <li className={styles.featureItem}>
-                                <div><strong>Smart Features</strong>App monitoring included</div>
+                                <div><strong>High Performance</strong>Powers AC, pool & large appliances</div>
                             </li>
                         </ul>
-                        <div className={styles.warrantyBox}>✓ $0 Interest-free finance available</div>
-                        <div className={styles.warrantyBox}>✓ Best-rated solar battery in Victoria</div>
+                        <div className={styles.warrantyBox}>✓ 25-year performance warranty included</div>
                         <Link href="/contact" className="mt-auto">
                             <button className={styles.orangeButton}>Get Your Free Quote →</button>
                         </Link>
                     </div>
                 </div>
+
             </div>
         </section>
     );
