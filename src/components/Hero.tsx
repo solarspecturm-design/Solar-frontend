@@ -11,10 +11,7 @@ const Hero = () => {
                 {/* Right Section: Content */}
                 <div className={styles.rightSection}>
                     <div className={styles.badges}>
-                        {/* 01 Badge: Approved Seller */}
-                        <div className={styles.badgeItem}>
-                            <img src={"https://www.solarrun.com.au/wp-content/uploads/2024/12/approved.png"}></img>
-                        </div>
+
                         {/* 03 Badge: No.2 Popular */}
                         <div className={styles.badgeItem}>
                             <img src={"/certi.png"}></img>

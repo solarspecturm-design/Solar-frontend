@@ -13,7 +13,7 @@ const feedbacks = [
     {
         name: "Robert Chen",
         role: "Homeowner",
-        quote: "Excellent customer service. They guided us through the entire process, including the government rebates. Highly recommend Solar Spectrum!",
+        quote: "Excellent customer service. They guided us through the entire process from start to finish. Highly recommend Solar Spectrum!",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
     },
     {

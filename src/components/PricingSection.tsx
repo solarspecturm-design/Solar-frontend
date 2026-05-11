@@ -111,7 +111,7 @@ const PricingSection = () => {
                                 <div><strong>Save $3,300 Yearly</strong>Typical annual savings on power bills</div>
                             </li>
                             <li className={styles.featureItem}>
-                                <div><strong>VIC Rebate Included</strong>$1,400 rebate & $1,400 Solar Victoria Loan Applied</div>
+                                <div><strong>Tier 1 Solar Panels</strong>High efficiency and durability</div>
                             </li>
                             <li className={styles.featureItem}>
                                 <div><strong>High Performance</strong>Powers AC, pool & large appliances</div>
