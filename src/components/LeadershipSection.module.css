@@ -1,0 +1,122 @@
+.section {
+    padding: 100px 20px;
+    background: #fdfdfd;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    background: linear-gradient(90deg, #349920 40%, #febd59 50%, #349920 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #111;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.statCard {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.statCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.statIcon {
+    width: 60px;
+    height: 60px;
+    background: rgba(52, 153, 32, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: #349920;
+}
+
+.statValue {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.statLabel {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.bgGlow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(52, 153, 32, 0.05) 0%, transparent 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+    .statsGrid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+}

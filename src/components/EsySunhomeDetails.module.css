@@ -1,0 +1,335 @@
+.wrapper {
+    background: #fff;
+    color: #333;
+}
+
+.section {
+    padding: 80px 20px;
+}
+
+.grayBg {
+    background: #f8f9fa;
+}
+
+.greenBg {
+    background: #349920;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mainTitle {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.introContent {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.introContent p {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.titleCenter {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #111;
+}
+
+.titleWhite {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.textWhite {
+    color: #e0e0e0;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.listWhite {
+    color: #e0e0e0;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.listWhite li {
+    margin-bottom: 10px;
+}
+
+.flexRow {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.flexRowInverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 60px;
+}
+
+.flexText {
+    flex: 1;
+}
+
+.flexImage {
+    flex: 1;
+}
+
+.roundedImage {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.benefitsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.benefitCard {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
+
+.benefitCard h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #349920;
+}
+
+.benefitCard p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.featureItem {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.featureItem strong {
+    color: #349920;
+}
+
+.specsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.specsTable {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+.specsTable h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #111;
+    border-bottom: 2px solid #349920;
+    padding-bottom: 10px;
+}
+
+.specsTable ul {
+    list-style: none;
+    padding: 0;
+}
+
+.specsTable li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.specsTable li span {
+    font-weight: 700;
+    color: #555;
+}
+
+.datasheetGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.datasheetCard {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.datasheetCard span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.downloadBtn {
+    background: #349920;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.downloadBtn:hover {
+    background: #2d821b;
+}
+
+.primaryButton {
+    background: #349920;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.whiteButton {
+    background: #fff;
+    color: #349920;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.productImagesShowcase {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.productImageItem {
+    text-align: center;
+}
+
+.productImageItem p {
+    margin-top: 15px;
+    font-weight: 700;
+    color: #349920;
+}
+
+@media (max-width: 1024px) {
+    .section {
+        padding: 60px 20px;
+    }
+
+    .productImagesShowcase {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flexRow, .flexRowInverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .specsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .mainTitle {
+        font-size: 28px;
+    }
+
+    .title, .titleCenter, .titleWhite {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 40px 15px;
+    }
+
+    .mainTitle {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .introContent {
+        font-size: 16px;
+    }
+
+    .specsTable {
+        padding: 20px;
+    }
+
+    .specsTable h3 {
+        font-size: 18px;
+    }
+
+    .specsTable li {
+        font-size: 14px;
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .datasheetGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainTitle {
+        font-size: 22px;
+    }
+
+    .datasheetGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .primaryButton, .whiteButton {
+        width: 100%;
+        padding: 15px 20px;
+    }
+}
+
+

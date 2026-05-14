@@ -155,6 +155,48 @@ const SolarSolutionsSection = () => {
                         </div>
                     </div>
                 </div>
+                {/* Card 4 - ESY Sunhome HM6 */}
+                <div className={styles.card}>
+                    <div className={styles.imageWrapper}>
+                        <Image
+                            src="/esy-sunhome.png"
+                            alt="ESY Sunhome HM6"
+                            fill
+                            className={styles.image}
+                        />
+                    </div>
+
+                    <div className={styles.cardContent}>
+                        <h3 className={styles.cardTitle}>ESY Sunhome HM6</h3>
+                        <p className={styles.cardDescription}>
+                            Premium all-in-one residential energy storage system with AI-driven optimization and seamless home integration.
+                        </p>
+
+                        <div className={styles.specs}>
+                            <div className={styles.specRow}>
+                                <span className={styles.specLabel}>Product Warranty:</span>
+                                <span className={styles.specValue}>10 Years</span>
+                            </div>
+                            <div className={styles.specRow}>
+                                <span className={styles.specLabel}>Battery Performance:</span>
+                                <span className={styles.stars}>★★★★★</span>
+                            </div>
+                            <div className={styles.specRow}>
+                                <span className={styles.specLabel}>Storage Size:</span>
+                                <span className={styles.specValue}>5-30 kWh</span>
+                            </div>
+                        </div>
+
+                        <div className={styles.buttons}>
+                            <Link href="/contact">
+                                <button className={styles.primaryButton}>Get Your Free Quote</button>
+                            </Link>
+                            <Link href="/product/esy-sunhome">
+                                <button className={styles.secondaryButton}>Explore</button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
