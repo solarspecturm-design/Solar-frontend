@@ -1,7 +1,14 @@
 'use client';
+import { useState } from 'react';
 import styles from './ContactLocations.module.css';
 
 export default function ContactLocations() {
+  const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
+
+  const locations = [
+    { name: 'Melbourne', icon: '📍' },
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -11,17 +18,27 @@ export default function ContactLocations() {
             Serving You Across <span className={styles.highlight}>Melbourne</span>
           </h2>
           <p className={styles.subtitle}>
-            We provide expert solar solutions across Melbourne. Our local experts are ready to assist you.
+            {selectedLocation
+              ? `Currently showing our availability for ${selectedLocation}. Our local experts are ready to assist you.`
+              : "We provide expert solar solutions across  Melbourne citie. Select a location to see our local availability."
+            }
           </p>
         </div>
 
         <div className={styles.locationsGrid}>
-          <div className={`${styles.locationCard} ${styles.selectedCard}`}>
-            <div className={styles.cardHeader}>
-              <div className={styles.iconWrapper}>📍</div>
-              <h3 className={styles.locationName}>Melbourne</h3>
+          {locations.map((location, index) => (
+            <div 
+              key={index} 
+              className={`${styles.locationCard} ${selectedLocation === location.name ? styles.selectedCard : ''}`} 
+              onClick={() => setSelectedLocation(location.name)}
+              style={{ cursor: 'pointer' }}
+            >
+              <div className={styles.cardHeader}>
+                <div className={styles.iconWrapper}>{location.icon}</div>
+                <h3 className={styles.locationName}>{location.name}</h3>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
 
       </div>
