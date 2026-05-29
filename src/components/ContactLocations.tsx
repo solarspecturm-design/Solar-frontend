@@ -20,12 +20,12 @@ export default function ContactLocations() {
         <div className={styles.header}>
           <div className={styles.badge}>Our Presence</div>
           <h2 className={styles.title}>
-            Serving You Across <span className={styles.highlight}>Australia</span>
+            Serving You Across <span className={styles.highlight}>Melbourne</span>
           </h2>
           <p className={styles.subtitle}>
             {selectedLocation 
               ? `Currently showing our availability for ${selectedLocation}. Our local experts are ready to assist you.`
-              : "We provide expert solar solutions across major Australian cities. Select a location to see our local availability."
+              : "We provide expert solar solutions across Melbourne. Select a location to see our local availability."
             }
           </p>
         </div>

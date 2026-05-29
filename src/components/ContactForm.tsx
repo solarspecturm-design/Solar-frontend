@@ -71,7 +71,7 @@ export default function ContactForm() {
                 <div className={styles.detailIcon}>📍</div>
                 <div>
                   <h4 className={styles.detailLabel}>Office</h4>
-                  <p className={styles.detailValue}>404/87 Overton Rd, Williams Landing VIC 3027</p>
+                  <p className={styles.detailValue}>404/87 Overton Rd, Williams Landing, Melbourne, VIC 3027, Australia</p>
                 </div>
               </div>
             </div>

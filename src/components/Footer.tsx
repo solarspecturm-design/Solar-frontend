@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className={styles.logoArea}>
                     <Logo width={150} height={40} className={styles.footerLogo} />
                     <p className={styles.logoDesc}>
-                        Australia's leading provider of smart energy solutions. Powering your home with premium solar, battery, and climate control systems.
+                        Melbourne, Australia's leading provider of smart energy solutions. Powering your home with premium solar, battery, and climate control systems.
                     </p>
                     <div className={styles.socials}>
                         <Link href="#" className={styles.socialIcon}>
@@ -48,11 +48,11 @@ const Footer = () => {
                 <div className={styles.linksArea}>
                     <h3 className={styles.columnTitle}>Our Service</h3>
                     <div className={styles.links}>
-                        <Link href="#" className={styles.linkItem}><span className={styles.linkIcon}>›</span> Solar Panels</Link>
-                        <Link href="#" className={styles.linkItem}><span className={styles.linkIcon}>›</span> Solar Battery</Link>
-                        <Link href="#" className={styles.linkItem}><span className={styles.linkIcon}>›</span> Heating & Cooling</Link>
-                        <Link href="#" className={styles.linkItem}><span className={styles.linkIcon}>›</span> Heat Pump</Link>
-                        <Link href="#" className={styles.linkItem}><span className={styles.linkIcon}>›</span> EV Chargers</Link>
+                        <Link href="/product" className={styles.linkItem}><span className={styles.linkIcon}>›</span> Solar Panels</Link>
+                        <Link href="/solar-battery" className={styles.linkItem}><span className={styles.linkIcon}>›</span> Solar Battery</Link>
+                        <Link href="/heating-cooling" className={styles.linkItem}><span className={styles.linkIcon}>›</span> Heating & Cooling</Link>
+                        <Link href="/ev-chargers" className={styles.linkItem}><span className={styles.linkIcon}>›</span> Heat Pump</Link>
+                        <Link href="/ev-chargers" className={styles.linkItem}><span className={styles.linkIcon}>›</span> EV Chargers</Link>
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@ const Footer = () => {
                             <div className={styles.contactIcon}>
                                 <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
                             </div>
-                            <span>404/87 Overton Rd,<br />Williams Landing VIC 3027</span>
+                            <span>404/87 Overton Rd,<br />Williams Landing, Melbourne, VIC 3027, Australia</span>
                         </div>
                     </div>
                 </div>
