@@ -49,8 +49,8 @@
 }
 
 .locationsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -63,6 +63,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 100%;
+    max-width: 380px;
 }
 
 .locationCard:hover {
