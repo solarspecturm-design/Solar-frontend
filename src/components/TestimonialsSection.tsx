@@ -75,7 +75,7 @@ const TestimonialsSection = () => {
                                     />
                                 </div>
                                 <div className={styles.userDetails}>
-                                    <span className={styles.userName}>Michelle R., Brisbane QLD</span>
+                                    <span className={styles.userName}>Michelle R., Melbourne VIC</span>
                                     <span className={styles.userRole}>Melbourne</span>
                                 </div>
                             </div>
