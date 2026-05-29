@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
                                 </div>
                                 <div className={styles.userDetails}>
                                     <span className={styles.userName}>Sarah B., Melbourne VIC</span>
-                                    <span className={styles.userRole}>Homeowner</span>
+                                    <span className={styles.userRole}>Melbourne</span>
                                 </div>
                             </div>
 
@@ -76,7 +76,7 @@ const TestimonialsSection = () => {
                                 </div>
                                 <div className={styles.userDetails}>
                                     <span className={styles.userName}>Michelle R., Brisbane QLD</span>
-                                    <span className={styles.userRole}>Homeowner</span>
+                                    <span className={styles.userRole}>Melbourne</span>
                                 </div>
                             </div>
 

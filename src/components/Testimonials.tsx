@@ -6,19 +6,19 @@ import styles from './Testimonials.module.css';
 const feedbacks = [
     {
         name: "Alice Thompson",
-        role: "Homeowner",
+        role: "Melbourne",
         quote: "The team was incredibly professional and the installation was done in one day. We are already seeing a massive drop in our energy bills!",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
     },
     {
         name: "Robert Chen",
-        role: "Homeowner",
+        role: "Melbourne",
         quote: "Excellent customer service. They guided us through the entire process from start to finish. Highly recommend Solar Spectrum!",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
     },
     {
         name: "Sarah Jenkins",
-        role: "Homeowner",
+        role: "Melbourne",
         quote: "Best investment we've made for our home. The panels look great and the battery backup gives us peace of mind during storms.",
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150"
     }
