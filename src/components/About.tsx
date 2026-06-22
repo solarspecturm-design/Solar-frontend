@@ -28,10 +28,7 @@ const About = () => {
                         Renewable Energy Storage Solution
                     </h2>
                     <p className={styles.description}>
-                        Ut Tellus Dolor, Dapibus Eget, Elementum Vel, Ifend Cursus Eleifend,
-                        Elit. Aenea Ifendn Auctor Wisi Et Ur Na. Aliquam Er At Volutpat. Duis Ac
-                        Tuifendrpis. Ut Tu Ellus Dolor, Dapibus Eget, Elementum Vel, Curifende
-                        Suseleifend.
+                        At Solar Spectrum, we're committed to transforming how Australians power their homes. With cutting-edge solar technology, battery storage solutions, and integrated smart systems, we make renewable energy accessible, affordable, and efficient. Our expert team has installed thousands of systems, delivering exceptional results and customer satisfaction across Australia.
                     </p>
 
                     <div className={styles.featureGrid}>
