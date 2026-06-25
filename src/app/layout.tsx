@@ -6,16 +6,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://solarspectrum.com.au'),
-  title: "Solar Spectrum | Renewable Energy Solutions",
-  description: "Solar & Battery, Heating & Cooling, Heat Pump & EV Chargers. The Smarter Way to power your home.",
+  title: "Solar Spectrum | Renewable Energy Storage Solution Australia",
+  description: "Solar Spectrum helps Australian homes and businesses switch to solar with reliable renewable energy storage solutions built for real savings and long-term results.",
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: "Solar Spectrum | Renewable Energy Solutions",
-    description: "Solar & Battery, Heating & Cooling, Heat Pump & EV Chargers. The Smarter Way to power your home.",
+    title: "Solar Spectrum | Renewable Energy Storage Solution Australia",
+    description: "Solar Spectrum helps Australian homes and businesses switch to solar with reliable renewable energy storage solutions built for real savings and long-term results.",
     url: "https://solarspectrum.com.au",
     siteName: "Solar Spectrum",
     images: [
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solar Spectrum | Renewable Energy Solutions",
-    description: "Solar & Battery, Heating & Cooling, Heat Pump & EV Chargers. The Smarter Way to power your home.",
+    title: "Solar Spectrum | Renewable Energy Storage Solution Australia",
+    description: "Solar Spectrum helps Australian homes and businesses switch to solar with reliable renewable energy storage solutions built for real savings and long-term results.",
     images: ["/opengraph-image"],
   },
 };
