@@ -9,6 +9,7 @@ import AboutExtended from '@/components/AboutExtended';
 import Process from '@/components/Process';
 import Services from '@/components/Services';
 import CTASection from '@/components/CTASection';
+import OfferHighlights from '@/components/OfferHighlights';
 import Testimonials from '@/components/Testimonials';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <AdsSlider />
+      <OfferHighlights />
       <About />
       <AboutExtended />
       <Process />
