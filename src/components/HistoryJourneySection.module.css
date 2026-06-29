@@ -117,20 +117,49 @@
 }
 
 @media (max-width: 1024px) {
+    .section {
+        padding: 70px 16px;
+    }
+
     .container {
         grid-template-columns: 1fr;
+        gap: 40px;
         text-align: center;
     }
 
     .visualContainer {
-        height: 400px;
+        height: 340px;
+    }
+
+    .content {
+        gap: 26px;
     }
 
     .paragraphContainer {
         align-items: center;
+        gap: 18px;
     }
 
     .button {
         align-self: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 50px 16px;
+    }
+
+    .visualContainer {
+        height: 280px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .mainDescription,
+    .secondaryDescription {
+        font-size: 15px;
     }
 }

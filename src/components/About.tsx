@@ -35,38 +35,40 @@ const About = () => {
                         We are the most experienced company in providing complete solar energy solutions — solar panel installations, battery storage systems, solar inverter solutions and smart energy management technologies — helping customers achieve maximum efficiency and lower electricity costs.
                     </p>
 
-                    <div className={styles.featureGrid}>
-                        <div className={styles.featureItem}>
-                            <div className={styles.checkCircle}>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4">
-                                    <path d="M20 6L9 17l-5-5" />
-                                </svg>
+                    <div className={styles.featureBox}>
+                        <div className={styles.featureGrid}>
+                            <div className={styles.featureItem}>
+                                <div className={styles.checkCircle}>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Custom Solar Solutions
                             </div>
-                            Custom Solar Solutions
-                        </div>
-                        <div className={styles.featureItem}>
-                            <div className={styles.checkCircle}>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4">
-                                    <path d="M20 6L9 17l-5-5" />
-                                </svg>
+                            <div className={styles.featureItem}>
+                                <div className={styles.checkCircle}>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Battery Storage Systems
                             </div>
-                            Battery Storage Systems
-                        </div>
-                        <div className={styles.featureItem}>
-                            <div className={styles.checkCircle}>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4">
-                                    <path d="M20 6L9 17l-5-5" />
-                                </svg>
+                            <div className={styles.featureItem}>
+                                <div className={styles.checkCircle}>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Flexible Finance Options
                             </div>
-                            Flexible Finance Options
-                        </div>
-                        <div className={styles.featureItem}>
-                            <div className={styles.checkCircle}>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4">
-                                    <path d="M20 6L9 17l-5-5" />
-                                </svg>
+                            <div className={styles.featureItem}>
+                                <div className={styles.checkCircle}>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                24/7 Call &amp; Chat Support
                             </div>
-                            24/7 Call &amp; Chat Support
                         </div>
                     </div>
 

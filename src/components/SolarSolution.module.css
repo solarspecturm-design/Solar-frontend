@@ -1,0 +1,192 @@
+/* ── SolarSolution.module.css ─────────────────────────── */
+
+.section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background image sits behind everything */
+.bgImg {
+    object-fit: cover;
+    object-position: center 40%;
+    z-index: 0 !important;
+}
+
+/* Overlay: dark on left & right edges, lighter in center */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            ellipse 60% 100% at 50% 50%,
+            rgba(0, 0, 0, 0.45) 0%,
+            rgba(0, 0, 0, 0.72) 100%
+        );
+    z-index: 1;
+}
+
+/* ── Centered content ──────────────────────────── */
+.content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 80px 32px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* ── Play ring + button ──────────────────────────── */
+.playRing {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 200, 30, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 0 0 6px rgba(0, 200, 30, 0.12),
+        0 0 20px rgba(0, 200, 30, 0.30);
+    animation: ringPulse 2.4s ease-in-out infinite;
+    margin-bottom: 4px;
+}
+
+@keyframes ringPulse {
+    0%, 100% { box-shadow: 0 0 0 6px rgba(0, 200, 30, 0.12), 0 0 20px rgba(0, 200, 30, 0.30); }
+    50% { box-shadow: 0 0 0 10px rgba(0, 200, 30, 0.06), 0 0 32px rgba(0, 200, 30, 0.45); }
+}
+
+.playBtn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(0, 190, 28, 0.88);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0, 190, 28, 0.55);
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.playBtn:hover {
+    background: #00b612;
+    transform: scale(1.08);
+}
+
+.playIcon {
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    margin-left: 2px; /* optical centering for play icon */
+}
+
+/* ── Heading ─────────────────────────────────────── */
+.heading {
+    font-size: 46px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.12;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.green {
+    color: #28e83a;
+    font-style: normal;
+}
+
+/* ── Subtitle ────────────────────────────────────── */
+.subtitle {
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.75;
+    margin: 0;
+    max-width: 720px;
+}
+
+/* ── CTA button ──────────────────────────────────── */
+.cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #28a745;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px 34px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 8px 28px rgba(40, 167, 69, 0.40);
+    letter-spacing: 0.2px;
+    margin-top: 4px;
+}
+
+.cta:hover {
+    background: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 36px rgba(40, 167, 69, 0.55);
+}
+
+/* Hide <br> on mobile */
+.br {
+    display: block;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────── */
+@media (max-width: 860px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .content {
+        padding: 70px 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .heading {
+        font-size: 32px;
+        letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+        font-size: 14.5px;
+    }
+
+    .br {
+        display: none;
+    }
+
+    .content {
+        padding: 60px 18px;
+        gap: 16px;
+    }
+
+    .cta {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .heading {
+        font-size: 26px;
+    }
+
+    .section {
+        min-height: 380px;
+    }
+}

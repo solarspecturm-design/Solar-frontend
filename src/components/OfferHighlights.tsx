@@ -20,12 +20,12 @@ const OfferHighlights = () => {
 
         <div className={styles.card}>
           <div className={styles.cardBody}>
-            <span className={styles.badge}>Financing Plan</span>
+            <span className={styles.badge}>Warranty Plan</span>
             <h3 className={styles.heading}>
-              <span className={styles.highlightText}>2 Years</span>
-              <span>Repayment Plan Available</span>
+              <span className={styles.highlightText}>1 Year</span>
+              <span>Warranty Available</span>
             </h3>
-            <p className={styles.subheading}>Flexible payment options built for your home energy needs</p>
+            <p className={styles.subheading}>Flexible coverage options built for your home energy needs</p>
           </div>
           <p className={styles.note}>*Conditions apply.</p>
         </div>

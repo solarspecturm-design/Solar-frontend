@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import styles from './AdsSlider.module.css';
 
@@ -22,6 +22,9 @@ const AdsSlider = () => {
     const [visible, setVisible] = useState(3);
     const total = adImages.length;
     const maxIndex = Math.max(total - visible, 0);
+    const touchStartX = useRef<number | null>(null);
+    const touchEndX = useRef<number | null>(null);
+    const minSwipeDistance = 50;
 
     const prev = useCallback(() => {
         setCurrent((c) => Math.max(c - 1, 0));
@@ -30,6 +33,33 @@ const AdsSlider = () => {
     const next = useCallback(() => {
         setCurrent((c) => Math.min(c + 1, maxIndex));
     }, [maxIndex]);
+
+    const onTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
+        touchStartX.current = event.touches[0].clientX;
+    };
+
+    const onTouchMove = (event: React.TouchEvent<HTMLDivElement>) => {
+        touchEndX.current = event.touches[0].clientX;
+    };
+
+    const onTouchEnd = () => {
+        if (touchStartX.current === null || touchEndX.current === null) {
+            touchStartX.current = null;
+            touchEndX.current = null;
+            return;
+        }
+
+        const distance = touchStartX.current - touchEndX.current;
+
+        if (distance > minSwipeDistance) {
+            next();
+        } else if (distance < -minSwipeDistance) {
+            prev();
+        }
+
+        touchStartX.current = null;
+        touchEndX.current = null;
+    };
 
     useEffect(() => {
         const updateVisible = () => {
@@ -46,13 +76,6 @@ const AdsSlider = () => {
     }, [maxIndex]);
 
     // Auto-advance
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrent((c) => (c >= maxIndex ? 0 : c + 1));
-        }, 4000);
-        return () => clearInterval(timer);
-    }, [maxIndex]);
-
     const dotCount = maxIndex + 1;
 
     return (
@@ -86,7 +109,12 @@ const AdsSlider = () => {
                     </svg>
                 </button>
 
-                <div className={styles.sliderWindow}>
+                <div
+                    className={styles.sliderWindow}
+                    onTouchStart={onTouchStart}
+                    onTouchMove={onTouchMove}
+                    onTouchEnd={onTouchEnd}
+                >
                     <div
                         className={styles.track}
                         style={{ transform: `translateX(calc(-${current} * (100% / ${visible})))` }}
