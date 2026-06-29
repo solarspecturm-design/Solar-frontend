@@ -1,9 +1,24 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './ContactSection.module.css';
 
+const adImages = [
+    '/ads/1.webp',
+    '/ads/2.webp'
+];
+
 const ContactSection = () => {
+    const [currentAdIndex, setCurrentAdIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentAdIndex((prev) => (prev + 1) % adImages.length);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <section className={styles.contactSection}>
             <div className={styles.header}>
@@ -15,21 +30,17 @@ const ContactSection = () => {
             </div>
 
             <div className={styles.container}>
-                {/* Left Area: Overlapping Images */}
+                {/* Left Area: Image Slider */}
                 <div className={styles.imageArea}>
-                    <div className={styles.mainImageWrapper}>
-                        <img
-                            src="./solar2.png"
-                            alt="Engineer with Solar Panel"
-                            className={styles.mainImage}
-                        />
-                    </div>
-                    <div className={styles.secondaryImageWrapper}>
-                        <img
-                            src="./solar.png"
-                            alt="Solar Farm at Sunset"
-                            className={styles.secondaryImage}
-                        />
+                    <div className={styles.sliderWrapper}>
+                        {adImages.map((img, index) => (
+                            <img
+                                key={img}
+                                src={img}
+                                alt={`Solar ad ${index + 1}`}
+                                className={`${styles.sliderImage} ${index === currentAdIndex ? styles.sliderImageActive : ''}`}
+                            />
+                        ))}
                     </div>
                 </div>
 
@@ -64,3 +75,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+

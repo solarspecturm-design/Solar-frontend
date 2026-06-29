@@ -10,19 +10,18 @@ const ValuesShowcaseSection = () => {
             <div className={styles.container}>
                 {/* Left Side Info */}
                 <div className={styles.leftContent}>
-                    <p className={styles.subtitle}>Our Value</p>
+                    <p className={styles.subtitle}>Our Guarantee</p>
                     <h2 className={styles.title}>
-                        The Better Source Of<br />
-                        Energy For The Better<br />
-                        Tomorrow.
+                        Quality and Customer Satisfaction
                     </h2>
                     <p className={styles.description}>
-                        At Solar Spectrum, We Believe In Delivering Sustainable Energy With Integrity,
-                        Innovation, And Excellence. We're Committed To Customer Satisfaction,
-                        Smart Technology, And Creating A Greener Future For All.
+                        Quality is the heart of what we do at Solar Spectrum. We believe every customer deserves a reliable solar system, professional service, and expert advice. Our experienced team uses high quality solar technology and professional installation standards on each project for long lasting performance.
                     </p>
-                    <Link href="/about">
-                        <button className={styles.btn}>Discover More</button>
+                    <p className={styles.description}>
+                        Our goal is to make it a simple, clear experience for our customers, from initial consultation to support post-installation. Our number one priority is customer satisfaction and we are dedicated to providing dependable renewable energy solutions that our customers can count on.
+                    </p>
+                    <Link href="/contact">
+                        <button className={styles.btn}>Consult Now</button>
                     </Link>
                 </div>
 
@@ -40,7 +39,7 @@ const ValuesShowcaseSection = () => {
                         <div className={styles.cardContent}>
                             <h3 className={`${styles.cardTitle} ${styles.textBlack}`}>Our Vision</h3>
                             <p className={`${styles.cardText} ${styles.textGray}`}>
-                                Smart Solar Systems Designed For Your Needs — Saving Energy With Simple Setup And Lasting Performance.
+                                We are Australia’s leading renewable energy provider, providing smarter, cleaner and more efficient solar solutions that empower homes and businesses to achieve energy independence.
                             </p>
                         </div>
                     </div>
@@ -56,7 +55,7 @@ const ValuesShowcaseSection = () => {
                         <div className={styles.cardContent}>
                             <h3 className={`${styles.cardTitle} ${styles.textBlack}`}>Our Mission</h3>
                             <p className={`${styles.cardText} ${styles.textGray}`}>
-                                Smart Solar Systems Designed For Your Needs — Saving Energy With Simple Setup And Lasting Performance.
+                                We’re dedicated to making renewable energy affordable and accessible through innovative solar technology, professional installation, and customer-centric solutions that provide lasting value.
                             </p>
                         </div>
                     </div>
@@ -73,7 +72,7 @@ const ValuesShowcaseSection = () => {
                         <div className={styles.cardContent}>
                             <h3 className={`${styles.cardTitle} ${styles.textBlack}`}>Our Motto</h3>
                             <p className={`${styles.cardText} ${styles.textGray}`}>
-                                Smart Solar Systems Designed For Your Needs — Saving Energy With Simple Setup And Lasting Performance.
+                                Brighter tomorrow with smarter solar solutions today.
                             </p>
                         </div>
                     </div>

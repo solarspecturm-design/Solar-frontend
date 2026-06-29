@@ -7,22 +7,19 @@ import styles from './Services.module.css';
 const services = [
     {
         title: "Solar Panels",
-
-        description: "Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.",
+        description: "Tailor-made solar panel installations for your property’s energy needs. Our specialist team creates tailor-made solar solutions to improve energy efficiency, reduce electricity bills and maximize renewable energy production.",
         image: "./services2.png",
         learnMoreLink: "/product"
     },
     {
-        title: "Solar Battery",
-
-        description: "Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.",
+        title: "Battery Pack Solar",
+        description: "Premium solar battery storage systems for storing excess solar energy and increasing energy independence. We install proven battery systems designed for your power needs, helping you reduce your dependency on the grid and maximise your solar investment.",
         image: "services4.png",
         learnMoreLink: "/solar-battery"
     },
     {
-        title: "Heating & Cooling",
-
-        description: "Professional installation of high-efficiency solar panels tailored to your property's unique requirements and energy needs.",
+        title: "Climate and the Atmosphere",
+        description: "Intelligent solutions for climate and air for more comfort and energy efficiency Professionally designed and installed to the needs of your property, get us all moving to a more sustainable energy future.",
         image: "services3.png",
         learnMoreLink: "/heating-cooling"
     }
@@ -32,10 +29,10 @@ const Services = () => {
     return (
         <section className={styles.servicesSection}>
             <div className={styles.header}>
-                <span className={styles.subtitle}>Our Services</span>
-                <h2 className={styles.title}>Solar Solutions For Every Need</h2>
+                <span className={styles.subtitle}>What We Offer</span>
+                <h2 className={styles.title}>Customized Solar Solutions</h2>
                 <p className={styles.intro}>
-                    From residential installations to commercial projects, we provide end-to-end solar solutions with expert consultation and ongoing support.
+                    We provide full solar power solutions for homes and businesses including expert consultation, professional installation and reliable customer service.
                 </p>
             </div>
 
@@ -49,7 +46,7 @@ const Services = () => {
                                 className={styles.serviceImage}
                             />
                         </div>
-                        <h3 className={service.title === "Solar Panels" ? styles.serviceTitle : styles.serviceTitle}>
+                        <h3 className={styles.serviceTitle}>
                             {service.title}
                         </h3>
 

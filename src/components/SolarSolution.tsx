@@ -20,37 +20,24 @@ const SolarSolution = () => {
             </div>
 
             {/* Content Container */}
-            <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center space-y-16">
-
-                {/* Play Button with Pulsing Effect */}
-                <div className="relative group cursor-pointer mb-20">
-                    {/* Animated Ripple Effects */}
-                    <div className="absolute inset-0 rounded-full bg-green-500/40 animate-pulse scale-[1.8] opacity-20" />
-                    <div className="absolute inset-0 rounded-full bg-green-500/30 animate-pulse scale-[1.4] opacity-30 delay-700" />
-
-                    {/* Main Button */}
-                    <div className="relative w-20 h-20 bg-[#16a34a] rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(22,163,74,0.6)] transition-all group-hover:scale-110 duration-500 z-10">
-                        <div className="w-16 h-16 rounded-full border border-white/30 flex items-center justify-center">
-                            <svg className="w-8 h-8 text-white ml-1 filter drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+            <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center space-y-8">
 
                 {/* Headline */}
-                <h2 className="text-4xl md:text-6xl font-bold text-white max-w-4xl tracking-tight leading-tight mt-10">
-                    Searching for the Perfect <span className="text-green-500">Solar Solution?</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl tracking-tight leading-tight">
+                    Creative Solar Battery Storage Solutions
                 </h2>
 
-                {/* Sub-headline */}
-                <p className="text-gray-300 text-lg md:text-xl max-w-3xl font-medium leading-relaxed mt-4">
-                    We Bring Smart Solar Energy To Every Home And Business, Combining Innovation, Efficiency, And Lasting Performance For A Brighter, Greener Future.
+                {/* Sub-headlines */}
+                <p className="text-gray-300 text-base md:text-lg max-w-3xl font-medium leading-relaxed">
+                    Add to that reliable technology of battery storage and the power of solar energy becomes even greater. Solar Spectrum’s leading edge solar battery storage solutions enable our customers to store excess energy generated during the day for use when needed.
+                </p>
+                <p className="text-gray-400 text-sm md:text-base max-w-3xl font-medium leading-relaxed">
+                    Battery storage makes energy more efficient, more independent and less reliant on the traditional electricity grid. It gives homeowners and businesses the opportunity to get the most out of their solar investment, by delivering clean energy when they need it. Our team of experts will help you choose the right battery storage solution for your energy use, property needs and future goals.
                 </p>
 
                 {/* Consult Now Button */}
                 <Link href="/contact">
-                    <button className="!bg-[#00B612] hover:!bg-[#009a0f] text-white font-bold !py-3.5 !px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(0,182,18,0.3)] text-lg tracking-tight inline-block whitespace-nowrap">
+                    <button className="!bg-[#00B612] hover:!bg-[#009a0f] text-white font-bold !py-3.5 !px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(0,182,18,0.3)] text-lg tracking-tight inline-block whitespace-nowrap mt-4">
                         Consult Now
                     </button>
                 </Link>

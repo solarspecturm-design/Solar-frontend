@@ -1,0 +1,355 @@
+.section {
+    padding: 70px 20px;
+    background: linear-gradient(160deg, #f0fdf4 0%, #ffffff 50%, #f0f9ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative background blobs */
+.section::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(40, 167, 69, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.section::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Header */
+.header {
+    max-width: 1280px;
+    margin: 0 auto 36px;
+    position: relative;
+    z-index: 1;
+}
+
+.badgeRow {
+    margin-bottom: 14px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #28a745, #16a34a);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.35);
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 900;
+    color: #0d1a0d;
+    margin: 0 0 12px;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+.titleAccent {
+    color: #28a745;
+    position: relative;
+}
+
+.titleAccent::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #28a745, #86efac);
+    border-radius: 2px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+    max-width: 720px;
+}
+
+.highlight {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+/* Slider */
+.sliderOuter {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.sliderWindow {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.track {
+    display: flex;
+    transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide {
+    flex: 0 0 calc(100% / 3);
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.slideImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    object-fit: contain;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slideImg:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
+}
+
+.quoteBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px auto 0;
+    padding: 12px 22px;
+    background: #ffffff;
+    color: #0f172a;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.quoteBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.16);
+    background: #f8fafc;
+}
+
+.quoteArrow {
+    margin-left: 8px;
+    display: inline-flex;
+    transition: transform 0.2s ease;
+}
+
+.quoteBtn:hover .quoteArrow {
+    transform: translateX(2px);
+}
+
+/* Arrows */
+.arrow {
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #374151;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+}
+
+.arrow:hover:not(:disabled) {
+    background: linear-gradient(135deg, #28a745, #16a34a);
+    color: #fff;
+    border-color: #28a745;
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.35);
+    transform: scale(1.08);
+}
+
+.arrow:disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.arrow svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Dots */
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #d1d5db;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, width 0.3s;
+    padding: 0;
+}
+
+.dot:hover {
+    background: #28a745;
+}
+
+.dotActive {
+    background: #28a745;
+    width: 28px;
+    border-radius: 6px;
+    transform: none;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .slide {
+        flex: 0 0 50%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 900px) {
+    .sliderOuter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .arrow {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .quoteBtn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 50px 16px;
+    }
+
+    .header {
+        margin-bottom: 24px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .sliderOuter {
+        gap: 10px;
+    }
+
+    .arrow {
+        width: 38px;
+        height: 38px;
+        border-width: 1.5px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .dotActive {
+        width: 22px;
+    }
+
+    .quoteBtn {
+        width: 100%;
+        max-width: 220px;
+        margin: 16px auto 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .section {
+        padding: 50px 16px;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .arrow {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+    }
+
+    .badge {
+        font-size: 11px;
+    }
+}

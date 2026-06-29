@@ -17,18 +17,22 @@ const About = () => {
                             className={styles.mainImage}
                         />
                     </div>
-
-
                 </div>
 
                 {/* Right Section: Content */}
                 <div className={styles.content}>
                     <span className={styles.subtitle}>About Us</span>
                     <h2 className={styles.title}>
-                        Renewable Energy Storage Solution
+                        Building a Sustainable Future with Solar Power
                     </h2>
                     <p className={styles.description}>
-                        At Solar Spectrum, we're committed to transforming how Australians power their homes. With cutting-edge solar technology, battery storage solutions, and integrated smart systems, we make renewable energy accessible, affordable, and efficient. Our expert team has installed thousands of systems, delivering exceptional results and customer satisfaction across Australia.
+                        Solar Spectrum believes the future of energy is clean, reliable and sustainable. We&apos;re an Australian renewable energy company passionate about helping homes and businesses get to their energy future by providing innovative, affordable, efficient solar solutions, built for durability.
+                    </p>
+                    <p className={styles.description}>
+                        Solar Spectrum has designed and installed thousands of solar energy systems throughout Australia having worked for many years in the renewable energy industry. Our team of experts work with customers to develop renewable energy solutions that are right for a variety of property types, energy needs and budgets.
+                    </p>
+                    <p className={styles.description}>
+                        We are the most experienced company in providing complete solar energy solutions — solar panel installations, battery storage systems, solar inverter solutions and smart energy management technologies — helping customers achieve maximum efficiency and lower electricity costs.
                     </p>
 
                     <div className={styles.featureGrid}>
@@ -38,7 +42,7 @@ const About = () => {
                                     <path d="M20 6L9 17l-5-5" />
                                 </svg>
                             </div>
-                            Solar Inverter Setup
+                            Custom Solar Solutions
                         </div>
                         <div className={styles.featureItem}>
                             <div className={styles.checkCircle}>
@@ -46,7 +50,7 @@ const About = () => {
                                     <path d="M20 6L9 17l-5-5" />
                                 </svg>
                             </div>
-                            Battery Storage Solutions
+                            Battery Storage Systems
                         </div>
                         <div className={styles.featureItem}>
                             <div className={styles.checkCircle}>
@@ -54,7 +58,7 @@ const About = () => {
                                     <path d="M20 6L9 17l-5-5" />
                                 </svg>
                             </div>
-                            Solar Material Financing
+                            Flexible Finance Options
                         </div>
                         <div className={styles.featureItem}>
                             <div className={styles.checkCircle}>
@@ -62,7 +66,7 @@ const About = () => {
                                     <path d="M20 6L9 17l-5-5" />
                                 </svg>
                             </div>
-                            24 X 7 Call & Chat Support
+                            24/7 Call &amp; Chat Support
                         </div>
                     </div>
 
@@ -71,8 +75,6 @@ const About = () => {
                     </Link>
                 </div>
             </div>
-
-
         </section>
     );
 };

@@ -2,13 +2,29 @@
     position: relative;
     width: 100%;
     min-height: 800px;
-    background: url('/herro1.png') no-repeat center bottom;
-    background-size: cover;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+}
+
+.bgImage.active {
+    opacity: 1;
 }
 
 .waveSeparator {
@@ -17,340 +33,341 @@
 }
 
 .container {
-    max-width: 1280px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.8fr 1fr 1.2fr;
-    align-items: center;
-    gap: 30px;
-    z-index: 10;
-}
-
-/* Left Section: Mega Offers */
-.leftSection {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    z-index: 20;
-    transform: rotate(-3deg);
-}
-
-.megaBanner {
     position: relative;
-    display: flex;
-    flex-direction: column;
-
-    padding: 6px;
-
-    width: fit-content;
-    border-radius: 4px;
-}
-
-.megaHeader {
-    display: flex;
-    align-items: stretch;
-    height: 52px;
-    margin-bottom: 4px;
-}
-
-.megaText {
-    background: #003b95;
-    color: white;
-    padding: 0 22px 0 12px;
-    display: flex;
-    align-items: center;
-    font-size: 38px;
-    font-weight: 950;
-    line-height: 1;
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-    margin-right: -12px;
-}
-
-.thisWeek {
-
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 12px;
-    font-size: 8px;
-    font-weight: 950;
-    line-height: 1.1;
-    text-align: center;
-}
-
-.offersLabel {
-    background: #fdbd11;
-    color: #003b95;
-    font-size: 56px;
-    font-weight: 950;
-    padding: 0 22px;
-    width: 100%;
-    line-height: 0.85;
-    text-align: center;
-    letter-spacing: -1px;
-}
-
-.uptoText {
-    color: #fff;
-    font-size: 28px;
-    font-weight: 950;
-    margin-top: 15px;
-    text-transform: uppercase;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    letter-spacing: 1px;
-}
-
-.percent {
-    color: #fff;
-}
-
-/* Center Section: Products */
-.centerSection {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.productsWrapper {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-}
-
-.evCharger {
-    width: 160px;
-    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.4));
-    z-index: 2;
-    transition: transform 0.3s ease;
-}
-
-.heatPump {
-    width: 140px;
-    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.4));
-    z-index: 1;
-    margin-left: -40px;
-}
-
-/* Right Section: Text & Badges */
-.rightSection {
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    max-width: 600px;
-    color: white;
-    z-index: 20;
-    text-align: left;
-}
-
-.badges {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-.badgeItem {
-    width: 100px;
-    height: 100px;
-    padding: 0;
-}
-
-.badgeItem img {
+    max-width: 1400px;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
-.mainHeading {
-    font-size: 50px;
-    font-weight: 950;
-    line-height: 0.95;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+/* LEFT BADGES */
+.leftBadges {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
 }
 
-.highlightText {
-    color: #fdbd11;
-}
-
-.smarterWayWrapper {
-    margin: 15px 0 30px;
-}
-
-.smarterWay {
-    background: #fdbd11;
-    color: #002c5c;
-    padding: 6px 30px;
-    border-radius: 40px;
-    font-weight: 950;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 1px;
+.badgesWrapper {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.btnWrapper {
-    margin-top: 20px;
+.reviewBadge {
+    height: 40px;
+    object-fit: contain;
 }
 
-.orderBtn {
-    background: #ffffff;
-    color: #002c5c;
-    padding: 12px 60px;
-    border-radius: 60px;
+.termsText {
+    color: white;
+    font-size: 14px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+/* CENTER CONTENT */
+.centerContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 20;
+}
+
+.titleTop {
+    font-size: 80px;
     font-weight: 900;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
+    line-height: 1;
+    display: flex;
+    gap: 15px;
+    align-items: baseline;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
 }
 
-.orderBtn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+.eofyText {
+    color: #ff6a00;
 }
 
-/* Lightning Bolts */
-.lightning {
+.yearText {
+    color: #0b1d3a;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: 900;
+    color: #0b1d3a;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.saleText {
+    font-size: 130px;
+    font-weight: 900;
+    line-height: 0.9;
+    color: transparent;
+    background: linear-gradient(180deg, #ff8c00 0%, #ff4500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0b1d3a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+.divider {
+    color: #ff6a00;
+}
+
+.offerBadgeWrapper {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.offerBadge {
+    display: flex;
+    align-items: center;
+    background-color: #1a2a40;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 30px;
+    gap: 15px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.offerBadge::before {
+    content: '';
     position: absolute;
-    z-index: 15;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #1a2a40 transparent;
 }
 
-.lightning1 {
-    top: 10%;
-    right: -5%;
-    width: 80px;
-    animation: flicker 2s infinite;
+.calendarIcon {
+    font-size: 40px;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
 }
 
-.lightning2 {
-    bottom: -10%;
-    left: -5%;
-    width: 60px;
-    animation: flicker 3s infinite;
+.offerTextCol {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
-@keyframes flicker {
-
-    0%,
-    100% {
-        opacity: 0.8;
-        transform: scale(1);
-    }
-
-    50% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
+.offerLimited {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
+.offerEnds {
+    font-size: 28px;
+    font-weight: 900;
+    color: #ffb700;
+    line-height: 1;
+}
+
+.ctaLink {
+    text-decoration: none;
+}
+
+.ctaButton {
+    background: linear-gradient(180deg, #ff8c00 0%, #d84300 100%);
+    color: white;
+    border: 2px solid white;
+    padding: 15px 40px;
+    font-size: 22px;
+    font-weight: 800;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.ctaButton:hover {
+    transform: scale(1.05);
+}
+
+/* RIGHT PRODUCTS */
+.rightProducts {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: -20px;
+    z-index: 5;
+}
+
+.productImg {
+    max-height: 250px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.productImg:nth-child(2) {
+    max-height: 200px;
+    margin-left: -50px;
+    z-index: 2;
+}
+
+.productImg:nth-child(3) {
+    max-height: 150px;
+    margin-left: -30px;
+    z-index: 3;
+}
+
+/* RESPONSIVENESS */
 @media (max-width: 1200px) {
+    .titleTop {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .saleText {
+        font-size: 100px;
+    }
+
+    .productImg {
+        max-height: 180px;
+    }
+
+    .productImg:nth-child(2) {
+        max-height: 150px;
+    }
+
+    .productImg:nth-child(3) {
+        max-height: 120px;
+    }
+}
+
+@media (max-width: 992px) {
     .container {
-        grid-template-columns: 1fr;
-        gap: 60px;
-        position: relative;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .leftSection,
-    .rightSection {
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
         flex-direction: column;
+        justify-content: center;
+        padding-top: 80px;
+    }
+
+    .leftBadges {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-top: 40px;
         align-items: center;
-        text-align: center;
-        margin: 0 auto;
-        transform: none;
     }
 
-    .centerSection {
-        display: none;
-        /* Hide center section on mobile/tablet to save space */
+    .rightProducts {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 40px;
+        justify-content: center;
     }
 
-    .megaBanner {
-        transform: rotate(-3deg);
-        margin-bottom: 20px;
+    .titleTop {
+        font-size: 50px;
     }
 
-    .badges {
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .saleText {
+        font-size: 80px;
+    }
+
+    .slogan {
+        font-size: 18px;
+        flex-wrap: wrap;
         justify-content: center;
     }
 }
 
-@media (max-width: 768px) {
-    .hero {
-        min-height: auto;
-        padding: 100px 20px;
-    }
-
-    .leftSection {
-        display: none !important;
-        /* Hide Mega Offers on mobile */
-    }
-
-    .badges {
-        display: none !important;
-        /* Hide badges on mobile */
-    }
-
-    .mainHeading {
-        font-size: 36px;
-        margin-bottom: 20px;
-    }
-
-    .smarterWay {
-        font-size: 16px;
-        padding: 5px 20px;
-    }
-
-    .orderBtn {
-        padding: 10px 40px;
-        font-size: 18px;
-    }
-
-    .rightSection {
-        position: relative;
-        top: 0;
-        right: 0;
-        max-width: 100%;
-        text-align: center;
-        display: flex;
+@media (max-width: 576px) {
+    .titleTop {
+        font-size: 40px;
         flex-direction: column;
         align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .mainHeading {
-        font-size: 28px;
+        gap: 0;
     }
 
-    .badges {
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .saleText {
+        font-size: 60px;
+        -webkit-text-stroke: 1px white;
+    }
+
+    .slogan {
+        font-size: 14px;
+    }
+
+    .offerBadge {
+        padding: 10px;
         gap: 10px;
     }
 
-    .badgeItem {
-        width: 60px;
-        height: 60px;
+    .calendarIcon {
+        font-size: 30px;
     }
 
-    .megaText {
-        font-size: 24px;
-        padding: 0 15px 0 10px;
+    .offerEnds {
+        font-size: 20px;
     }
 
-    .offersLabel {
-        font-size: 34px;
+    .ctaButton {
+        font-size: 16px;
+        padding: 12px 24px;
     }
 
-    .uptoText {
-        font-size: 18px;
+    .productImg {
+        max-height: 120px;
+    }
+
+    .productImg:nth-child(2) {
+        max-height: 100px;
+        margin-left: -20px;
+    }
+
+    .productImg:nth-child(3) {
+        max-height: 80px;
+        margin-left: -10px;
+    }
+
+    .badgesWrapper {
+        flex-direction: column;
     }
 }

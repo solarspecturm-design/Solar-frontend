@@ -50,13 +50,27 @@
     gap: 40px;
 }
 
+.textGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    max-width: 800px;
+}
+
 .title {
     color: #ffffff;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 800;
     line-height: 1.2;
     margin: 0;
-    max-width: 600px;
+}
+
+.description {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
 }
 
 .button {

@@ -12,8 +12,8 @@ const PropertyTypesSection = () => {
                     <polyline points="9 22 9 12 15 12 15 22" />
                 </svg>
             ),
-            title: "Residential Homes",
-            description: "Powerful solar solutions with seamless installation and smart performance."
+            title: "Solar for the Home",
+            description: "Our home solar systems are designed to help Australian homeowners make their own clean energy and reduce their dependence on rising electricity prices. Specialist solar panel installation services to maximise energy production and improve household efficiency."
         },
         {
             icon: (
@@ -22,8 +22,8 @@ const PropertyTypesSection = () => {
                     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
                 </svg>
             ),
-            title: "Commercial Buildings",
-            description: "Efficient solar solutions with smooth installation and smart performance."
+            title: "Commercial Solar Solutions",
+            description: "Reliable energy solutions are a must for the day-to-day running of a business. We design commercial solar systems that help organizations reduce their energy costs, improve their sustainability and take more control over how they use power."
         },
         {
             icon: (
@@ -34,13 +34,22 @@ const PropertyTypesSection = () => {
                     <path d="M12 13v4" />
                 </svg>
             ),
-            title: "Industrial Facilities",
-            description: "Smart solar systems with seamless setup and powerful performance."
+            title: "ISS - Industrial Solar Solutions",
+            description: "Solar Spectrum’s industrial-grade solar power solutions for industrial facilities with greater energy needs are built for performance, reliability and efficiency, enabling organisations to optimise energy consumption."
         }
     ];
 
     return (
         <section className={styles.section}>
+            <div className={styles.header}>
+                <h2 className={styles.headerTitle}>Made-to-Order Solar Solutions</h2>
+                <p className={styles.headerIntro}>
+                    Solar Spectrum is your one-stop source for solar energy solutions for homes, businesses and large facilities. Together we can design and install systems that suit your energy needs, the structure of your property and your budget.
+                </p>
+                <p className={styles.headerSub}>
+                    Whether you want to reduce your electricity bills, increase your energy efficiency or become more independent from the traditional power grid, our solar solutions can help you achieve your goals.
+                </p>
+            </div>
             <div className={styles.container}>
                 {properties.map((property, index) => (
                     <div key={index} className={styles.card}>

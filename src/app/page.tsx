@@ -2,8 +2,10 @@
 
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import AdsSlider from '@/components/AdsSlider';
 import Marquee from '@/components/Marquee';
 import About from '@/components/About';
+import AboutExtended from '@/components/AboutExtended';
 import Process from '@/components/Process';
 import Services from '@/components/Services';
 import CTASection from '@/components/CTASection';
@@ -17,7 +19,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Marquee />
+      <AdsSlider />
       <About />
+      <AboutExtended />
       <Process />
         <Services />
           <CTASection />
