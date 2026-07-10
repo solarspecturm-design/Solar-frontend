@@ -5,18 +5,21 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://solarspectrum.com.au'),
-  title: "Solar Spectrum | Renewable Energy Storage Solution Australia",
-  description: "Solar Spectrum helps Australian homes and businesses switch to solar with reliable renewable energy storage solutions built for real savings and long-term results.",
+  metadataBase: new URL('https://www.solarspectrum.com.au'),
+  alternates: {
+    canonical: '/',
+  },
+  title: "Solar Spectrum | Solar Panels & Battery Storage Australia",
+  description: "Switch to solar with Solar Spectrum Australia. We provide reliable solar panels and battery storage solutions for homes and businesses to maximize savings.",
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: "Solar Spectrum | Renewable Energy Storage Solution Australia",
-    description: "Solar Spectrum helps Australian homes and businesses switch to solar with reliable renewable energy storage solutions built for real savings and long-term results.",
-    url: "https://solarspectrum.com.au",
+    title: "Solar Spectrum | Solar Panels & Battery Storage Australia",
+    description: "Switch to solar with Solar Spectrum Australia. We provide reliable solar panels and battery storage solutions for homes and businesses to maximize savings.",
+    url: "https://www.solarspectrum.com.au",
     siteName: "Solar Spectrum",
     images: [
       {
@@ -31,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solar Spectrum | Renewable Energy Storage Solution Australia",
-    description: "Solar Spectrum helps Australian homes and businesses switch to solar with reliable renewable energy storage solutions built for real savings and long-term results.",
+    title: "Solar Spectrum | Solar Panels & Battery Storage Australia",
+    description: "Switch to solar with Solar Spectrum Australia. We provide reliable solar panels and battery storage solutions for homes and businesses to maximize savings.",
     images: ["/opengraph-image"],
   },
 };
