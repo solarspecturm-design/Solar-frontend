@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect } from 'react';
 import styles from './Hero.module.css';
@@ -21,6 +21,7 @@ const Hero = () => {
 
     return (
         <section className={styles.hero}>
+            <h1 className="sr-only">Solar Spectrum | Premium Clean Energy &amp; Solar Solutions for a Sustainable Future</h1>
             <div className={styles.imageWrapper}>
                 {images.map((img, index) => (
                     <img
