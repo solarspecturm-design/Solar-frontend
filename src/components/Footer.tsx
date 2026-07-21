@@ -81,7 +81,7 @@ const Footer = () => {
                 <div className={styles.bottomContainer}>
                     <span>© 2025 Solar Spectrum. All rights reserved.</span>
                     <div className={styles.legalLinks}>
-                        <Link href="#" className={styles.legalLink}>Privacy Policy</Link>
+                            <Link href="/privacy-policy" className={styles.legalLink}>Privacy Policy</Link>
                         <Link href="#" className={styles.legalLink}>Terms of Service</Link>
                     </div>
                 </div>
