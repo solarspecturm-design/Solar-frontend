@@ -42,3 +42,133 @@ button {
   border: none;
   font-family: inherit;
 }
+
+.contact-actions-container {
+  display: contents;
+}
+
+.contact-btn {
+  position: fixed;
+  bottom: 2rem;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.6rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              filter 0.2s ease;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+}
+
+.contact-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Call Now Button Stylings */
+.contact-btn--call {
+  left: 2rem;
+  background: #991823; /* Website Brand Red */
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(153, 24, 35, 0.35);
+}
+
+.contact-btn--call:hover {
+  box-shadow: 0 6px 20px rgba(153, 24, 35, 0.5);
+}
+
+/* Chat With Experts Button Stylings */
+.contact-btn--chat {
+  right: 2rem;
+  background: #25d366; /* WhatsApp Green */
+  border-radius: 999px; /* Pill-shaped */
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+}
+
+.contact-btn--chat:hover {
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.contact-btn__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-btn__icon-svg {
+  display: block;
+}
+
+/* WhatsApp icon - white SVG directly on green button */
+.whatsapp-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.whatsapp-logo-wrapper svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+/* Responsive view styles */
+@media (max-width: 768px) {
+  .contact-actions-container {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #ffffff;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px 20px 0 0;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .contact-btn {
+    position: static; /* Remove fixed position in container */
+    flex: 1;
+    height: 48px;
+    padding: 0; /* Center-aligned with flex-grow */
+    font-size: 0.9rem;
+    box-shadow: none; /* Shadow handled by parent bar or individually without offset */
+  }
+
+  /* Keep brand shadows on mobile too, but smaller */
+  .contact-btn--call {
+    box-shadow: 0 2px 8px rgba(153, 24, 35, 0.2);
+    border-radius: 12px;
+  }
+
+  .contact-btn--chat {
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.2);
+    border-radius: 999px;
+  }
+
+  .contact-btn:hover {
+    transform: none; /* Disable shift up on mobile hover */
+  }
+
+  /* Hide Call Now icon on mobile as shown in screen */
+  .contact-btn--call .contact-btn__icon {
+    display: none;
+  }
+}
