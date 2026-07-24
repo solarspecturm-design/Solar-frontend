@@ -55,78 +55,76 @@ button {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  padding: 0.8rem 1.6rem;
-  color: #fff;
+  padding: 0.75rem 1.4rem;
+  height: 48px;
+  color: #ffffff;
   font-weight: 700;
-  font-size: 0.95rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
-              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
-              filter 0.2s ease;
+  font-size: 0.92rem;
+  border-radius: 999px;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
   text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-btn:hover {
-  transform: translateY(-3px);
-  filter: brightness(1.08);
+  transform: translateY(-3px) scale(1.02);
+  filter: brightness(1.06);
 }
 
 .contact-btn:active {
-  transform: translateY(-1px);
+  transform: translateY(-1px) scale(0.99);
 }
 
-/* Call Now Button Stylings */
-.contact-btn--call {
-  left: 2rem;
-  background: #991823; /* Website Brand Red */
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(153, 24, 35, 0.35);
-}
-
-.contact-btn--call:hover {
-  box-shadow: 0 6px 20px rgba(153, 24, 35, 0.5);
-}
-
-/* Chat With Experts Button Stylings */
-.contact-btn--chat {
-  right: 2rem;
-  background: #25d366; /* WhatsApp Green */
-  border-radius: 999px; /* Pill-shaped */
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-}
-
-.contact-btn--chat:hover {
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
-}
-
-.contact-btn__icon {
+.contact-btn__icon-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(4px);
   flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.contact-btn:hover .contact-btn__icon-badge {
+  transform: scale(1.1);
 }
 
 .contact-btn__icon-svg {
   display: block;
 }
 
-/* WhatsApp icon - white SVG directly on green button */
-.whatsapp-logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  color: #fff;
+/* Call Now Button Stylings */
+.contact-btn--call {
+  left: 2rem;
+  background: linear-gradient(135deg, #b91c1c 0%, #991823 100%);
+  box-shadow: 0 6px 20px rgba(153, 24, 35, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
 }
 
-.whatsapp-logo-wrapper svg {
-  width: 24px;
-  height: 24px;
-  fill: #fff;
+.contact-btn--call:hover {
+  box-shadow: 0 10px 25px rgba(153, 24, 35, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.25) inset;
 }
 
-/* Responsive view styles */
+/* Chat With Experts Button Stylings */
+.contact-btn--chat {
+  right: 2rem;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+}
+
+.contact-btn--chat:hover {
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.25) inset;
+}
+
+.contact-btn__label {
+  white-space: nowrap;
+}
+
+/* Responsive mobile view styles */
 @media (max-width: 768px) {
   .contact-actions-container {
     display: flex;
@@ -135,40 +133,47 @@ button {
     left: 0;
     right: 0;
     z-index: 9999;
-    background: #ffffff;
-    padding: 0.75rem 1rem;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: 0.65rem 0.85rem;
+    box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.1);
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 20px 20px 0 0;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
   }
 
   .contact-btn {
-    position: static; /* Remove fixed position in container */
-    flex: 1;
-    height: 48px;
-    padding: 0; /* Center-aligned with flex-grow */
-    font-size: 0.9rem;
-    box-shadow: none; /* Shadow handled by parent bar or individually without offset */
+    position: static;
+    flex: 1 1 0%;
+    height: 44px;
+    padding: 0 10px;
+    font-size: 0.84rem;
+    gap: 0.4rem;
+    border-radius: 999px;
+    justify-content: center;
   }
 
-  /* Keep brand shadows on mobile too, but smaller */
+  .contact-btn__icon-badge {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-btn__icon-svg {
+    width: 14px;
+    height: 14px;
+  }
+
   .contact-btn--call {
-    box-shadow: 0 2px 8px rgba(153, 24, 35, 0.2);
-    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(153, 24, 35, 0.25);
   }
 
   .contact-btn--chat {
-    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.2);
-    border-radius: 999px;
+    box-shadow: 0 3px 10px rgba(37, 211, 102, 0.25);
   }
 
   .contact-btn:hover {
-    transform: none; /* Disable shift up on mobile hover */
-  }
-
-  /* Hide Call Now icon on mobile as shown in screen */
-  .contact-btn--call .contact-btn__icon {
-    display: none;
+    transform: none;
   }
 }
